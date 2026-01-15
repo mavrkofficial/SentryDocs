@@ -6,7 +6,7 @@ Get your Telegram group trading with Sentry Bot in just a few minutes!
 
 1. Open your Telegram group (must be a **private group** or **supergroup**)
 2. Add the Sentry Bot as a member
-   - Search for `@SentryBot` (or the bot's username)
+   - Search for `@Sentry_Trading_Bot`
    - Click "Add to Group"
 3. **Important**: The bot must be in a private group (not public channels)
 
