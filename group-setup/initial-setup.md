@@ -16,7 +16,7 @@ Before starting, make sure you have:
 
 1. Open your Telegram group
 2. Go to group settings → "Add Members"
-3. Search for `@SentryBot` (or your bot's username)
+3. Search for `@Sentry_Trading_Bot`
 4. Add the bot to the group
 
 ### Step 2: Promote to Admin
