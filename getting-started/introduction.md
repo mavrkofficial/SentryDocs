@@ -1,53 +1,54 @@
 # Introduction to Sentry Bot
 
-Sentry Bot is a powerful Telegram-based trading bot that turns your Telegram group into a decentralized hedge fund on the Solana blockchain. It enables communities to pool funds, trade tokens together, and automatically distribute profits based on performance.
+Sentry Bot is a Telegram-native trading system that turns your group into a decentralized hedge fund on Solana. The experience is now button-first: you open the Sentry Menu and tap your way through every action.
 
 ## What Can Sentry Bot Do?
 
-Sentry Bot provides a complete suite of trading and community management tools:
-
 ### Core Features
 
-- **Group Trading Wallet**: Each group gets a unique Solana wallet for pooled trading capital
-- **Instant Token Trading**: Buy and sell any Solana token with simple commands
-- **Profit Sharing**: Automatically distribute trading profits to group members
-- **Performance Tracking**: Comprehensive analytics, leaderboards, and statistics
-- **Token Deployment**: Launch your own tokens with zero capital required
-- **LP Fee Harvesting**: Collect trading fees from liquidity pools you create
-- **Smart DEX Routing**: Automatically finds the best prices via Jupiter and Orca
+- Group trading wallet for pooled capital
+- Button-driven trading (Call, DCA, Sell, Take Profit)
+- Profit sharing to payout wallets
+- Performance tracking with Stats, PnL, and Leaderboard
+- Token deployment with guided wizards
+- Yield harvesting from deployments
+- Smart DEX routing via Jupiter and Orca
 
-### How It Works
+## The Sentry Menu (How You Operate the Bot)
 
-1. **Group Setup**: The group owner initializes Sentry Bot, creating a unique group wallet
-2. **Funding**: Members contribute SOL to the group wallet
-3. **Trading**: Authorized traders execute trades using group funds
-4. **Profit Distribution**: When trades are profitable, profits are automatically split among members
-5. **Analytics**: Track performance, view leaderboards, and analyze trading data
+Open the menu from Telegram's chat menu button.
+
+Main buttons:
+
+- Call
+- DCA
+- Sell
+- Take Profit
+- Balance
+- Positions
+- Settings
+- Stats
+- Leaderboard
+- PnL
+- Deployer (owner only)
+
+Every button launches a guided flow. The bot will prompt you for token addresses, amounts, or selections as needed.
 
 ## Who Can Use Sentry Bot?
 
-- **Group Owners**: Full control over settings, traders, and deployments
-- **Traders**: Execute trades on behalf of the group
-- **Members**: Contribute funds and receive profit distributions
+- Group Owner: Full control, access to deployer features
+- Traders: Can trade and set payout wallets
+- Members: Contribute capital and receive distributions
 
 ## Key Concepts
 
-Before diving in, it's helpful to understand a few key concepts:
-
-- **Group Wallet**: The main Solana wallet that holds the group's trading capital
-- **Deployer Wallet**: A separate wallet used for token deployments (created automatically)
-- **Payout Wallet**: Your personal wallet address for receiving profit distributions
-- **Trader Permissions**: Special permissions that allow users to execute trades
-- **Harvest Wallet**: Wallet address for receiving harvested LP fees (owner only)
+- Group Wallet: Shared trading wallet for the group
+- Deployer Wallet: Separate wallet for token launches
+- Payout Wallet: Personal wallet for distributions
+- Trader Permissions: Required for trading actions
 
 ## What's Next?
 
-Ready to get started? Follow these steps:
-
-1. **[Quick Start Guide](./quick-start.md)** - Get your group up and running in minutes
-2. **[Group Setup Guide](../group-setup/overview.md)** - Configure your group settings
-3. **[Trading Guide](../trading/overview.md)** - Learn how to execute trades
-
----
-
-*Pro Tip: Use `/info` in your Telegram group to see all available commands at any time.*
+1. [Quick Start Guide](./quick-start.md) - Set up your group in minutes
+2. [Group Setup](../group-setup/overview.md) - Configure traders and payouts
+3. [Trading Guide](../trading/overview.md) - Learn the new menu flows

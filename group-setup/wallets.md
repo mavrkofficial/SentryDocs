@@ -1,143 +1,62 @@
 # Understanding Wallets
 
-Sentry Bot uses two separate Solana wallets for different purposes. Understanding the difference is important for proper group management.
+Sentry Bot uses two separate Solana wallets. Both are visible from the Sentry Menu.
 
-## Group Wallet
+## Group Wallet (Trading Wallet)
 
-The **Group Wallet** is the main trading wallet that holds your group's trading capital.
+The Group Wallet holds the group's trading capital.
 
 ### Purpose
-- Stores SOL for executing trades
-- Holds token positions purchased by the group
-- Receives profits from sold positions
-- Used for all `/call`, `/sell`, `/dca`, and `/tp` commands
+- Executes all trades (Call, DCA, Sell, Take Profit)
+- Holds active positions
+- Receives proceeds from sells
 
 ### Funding
-- **Anyone can contribute**: Send SOL to the Group Wallet address
-- **No minimum required**: But you need at least 0.1 SOL to execute trades
-- **Recommended starting amount**: 0.5 - 1.0 SOL
+- Anyone in the group can send SOL
+- Recommended: 0.5 to 1.0 SOL to start
+- Keep a small SOL buffer for gas fees
 
 ### Viewing Balance
-```
-/balance
-```
-Shows:
+Open Balance in the Sentry Menu to see:
 - SOL balance
 - USD value
-- Portfolio value (including token positions)
-
-### Wallet Address
-View the address with:
-```
-/wallet
-```
-Or check the message you received after `/start`.
+- Portfolio value (positions included)
 
 ### Important Notes
-- ⚠️ **Don't send tokens directly** - Only send SOL
-- ⚠️ **Keep some SOL for gas fees** - Reserve 0.01-0.05 SOL
-- ⚠️ **Monitor balance** - Use `/balance` regularly
+- Only send SOL to the Group Wallet
+- Keep extra SOL for gas (0.01 to 0.05 SOL)
 
-## Deployer Wallet
+## Deployer Wallet (Launch Wallet)
 
-The **Deployer Wallet** is used exclusively for token deployments.
+The Deployer Wallet is used for token launches and bundle operations.
 
 ### Purpose
-- Pays for token deployment transactions
-- Funds bundle buys (if enabled during deployment)
-- Used for the `/deploy` command
-
-### Funding
-- **Only needed for deployments**: Fund only if you plan to deploy tokens
-- **Cost per deployment**: ~0.045 SOL (gas fees)
-- **Bundle buy funding**: Additional SOL if you enable bundle buys
-
-### Viewing Balance
-```
-/wallet
-```
-Shows both Group Wallet and Deployer Wallet balances.
+- Pays deployment fees
+- Funds bundle buys (if enabled)
+- Supports Deployer tools in the menu
 
 ### When to Fund
+Fund the Deployer Wallet only if you plan to deploy a token or run bundle actions.
 
-Fund the Deployer Wallet when:
-- ✅ You're about to deploy a token (`/deploy`)
-- ✅ You want to enable bundle buys on deployment
-- ✅ You plan to use the "first buyer" feature
+## Where to Find Wallet Addresses
 
-**Don't fund if**: You only want to trade existing tokens (use Group Wallet instead).
+You can view both wallet addresses in:
 
-## Wallet Management
+- The initialization message
+- The Sentry Menu header (shows wallet details and balances)
 
-### Checking Both Wallets
-```
-/wallet
-```
+## Security Notes
 
-This command shows:
-- Group Wallet address and balance (SOL & USD)
-- Deployer Wallet address and balance (SOL & USD)
-- Quick access to both addresses
-
-### Funding Tips
-
-**Group Wallet**:
-- Start with 0.5-1.0 SOL
-- Add more as your group grows
-- Multiple members can contribute
-- Keep at least 0.1 SOL for trading
-
-**Deployer Wallet**:
-- Fund only when needed
-- ~0.1 SOL per deployment is usually sufficient
-- Add extra if using bundle buys
-- Can be funded by the owner only
-
-### Security Notes
-
-- 🔒 **Private keys are encrypted** and stored securely by the bot
-- 🔒 **Only the bot can access wallets** - you can't export private keys
-- 🔒 **Group owner controls settings** - but can't directly control wallet funds
-- 🔒 **Traders can only execute trades** - they can't withdraw funds directly
-
-### Withdrawing Funds
-
-To withdraw from Group Wallet:
-```
-/withdraw [amount] [address]
-```
-
-**Note**: This requires multi-sig approval from admins (2/3 approval needed).
-
-To withdraw from Deployer Wallet:
-```
-/deployerwithdraw [amount]
-```
-
-**Note**: Owner only, withdraws to harvest wallet if set.
+- Private keys are encrypted and stored by the bot
+- Traders can trade but cannot withdraw funds directly
+- Owner controls settings, not private keys
 
 ## Best Practices
 
-1. **Separate funding**: Keep Group Wallet and Deployer Wallet funded separately
-2. **Monitor balances**: Check `/balance` and `/wallet` regularly
-3. **Reserve SOL**: Always keep some SOL for gas fees
-4. **Group contributions**: Encourage members to contribute to Group Wallet
-5. **Deployer funding**: Only fund Deployer Wallet when deploying tokens
-
-## Common Questions
-
-### Can I use the same wallet for both?
-No, they're separate wallets by design for security and organization.
-
-### Who controls the wallets?
-The bot controls the wallets. The group owner controls settings, but funds are managed by the bot's smart contract logic.
-
-### Can traders withdraw funds?
-No, traders can only execute trades. Withdrawals require multi-sig approval or owner-only commands.
-
-### What happens if I lose access to the group?
-Contact support immediately. Wallet recovery is possible but requires verification.
+1. Keep Group and Deployer wallets funded separately
+2. Monitor balances in Balance
+3. Always leave a small SOL reserve for fees
 
 ---
 
-*Use `/wallet` anytime to view your wallet addresses and balances. Use `/balance` for a quick Group Wallet check.*
+Use the Balance button anytime for a quick view of wallet balances and portfolio value.

@@ -1,149 +1,75 @@
 # Quick Start Guide
 
-Get your Telegram group trading with Sentry Bot in just a few minutes!
+Get your Telegram group trading with Sentry Bot in minutes using the Sentry Menu.
 
 ## Step 1: Add the Bot to Your Group
 
-1. Open your Telegram group (must be a **private group** or **supergroup**)
-2. Add the Sentry Bot as a member
-   - Search for `@Sentry_Trading_Bot`
-   - Click "Add to Group"
-3. **Important**: The bot must be in a private group (not public channels)
+1. Open your Telegram group (private group or supergroup)
+2. Add `@Sentry_Trading_Bot`
+3. Keep the group private (public channels are not supported)
 
 ## Step 2: Promote the Bot to Admin
 
-This step is **essential** - the bot needs admin permissions to read messages and function correctly.
+The bot needs admin permissions to read messages and operate correctly.
 
-1. Open your group settings
-2. Go to "Administrators"
-3. Find Sentry Bot in the member list
-4. Click "Promote to Admin"
-5. Grant the bot permission to:
-   - Read messages ✅
-   - Delete messages (optional)
-   - Pin messages (optional)
+1. Group Settings -> Administrators
+2. Promote Sentry Bot
+3. Enable Read Messages (required)
+4. Optional: Delete Messages, Pin Messages
 
-**Why is this needed?** The bot needs to read messages to detect token addresses, respond to commands, and track trading activity.
+## Step 3: Initialize the Bot (Owner Only)
 
-## Step 3: Initialize the Bot
+The owner initializes the bot in the group. The bot will:
 
-1. In your group, type:
-   ```
-   /start
-   ```
-2. The bot will prompt you for a **group name** (if this is the first time)
-3. The bot will create two wallets:
-   - **Group Wallet**: For trading (main wallet)
-   - **Deployer Wallet**: For token deployments (created automatically)
-
-You'll see a message like this:
-
-```
-🛡️ Sentry Bot Initialized
-
-📊 Group Name: Your Group Name
-🆔 Chat ID: [number]
-💳 Group Wallet: [address]
-🚀 Deployer Wallet: [address]
-
-⚠️ IMPORTANT:
-1. Deposit SOL to Group Wallet to trade.
-2. Deposit SOL to Deployer Wallet for token deployments (~0.1 SOL per deployment).
-3. Make Sentry an Admin to function correctly.
-4. Current Plan: Free (2.5% Fee on Profits).
-```
+- Ask for a group name (first time only)
+- Create a Group Wallet for trading
+- Create a Deployer Wallet for token launches
 
 ## Step 4: Fund Your Group Wallet
 
-The group wallet needs SOL to execute trades. Anyone can contribute!
+1. Copy the Group Wallet address from the initialization message
+2. Send SOL from any wallet (Phantom, Solflare, etc.)
+3. Keep a SOL buffer for gas fees
 
-1. Copy the **Group Wallet** address from the `/start` message
-2. Send SOL to this address from any Solana wallet (Phantom, Solflare, etc.)
-3. The bot requires a minimum balance (default 0.1 SOL) to trade
+You can view balance from the Balance button in the menu.
 
-**Tip**: You can check your wallet balance anytime with `/balance`
+## Step 5: Open the Sentry Menu
 
-## Step 5: Set Up Traders
+Use Telegram's chat menu button to open Sentry Menu.
 
-Only users with "trader" permissions can execute trades. As the group owner:
+## Step 6: Set Up Traders and Payouts
 
-1. **Add traders** with:
-   ```
-   /addtrader @username
-   ```
-2. **View all traders** with:
-   ```
-   /traderslist
-   ```
+As the owner:
 
-**Note**: The group owner is automatically a trader. Previous admins may have been automatically migrated as traders.
+1. Settings -> Traders -> Add Trader
+2. Settings -> Payouts -> Set Payout Wallet (each trader should do this)
 
-## Step 6: Configure Settings (Optional)
+## Step 7: Configure Buy Amount (Optional)
 
-### Set Buy Amount
+Set the default trade size:
 
-Set the default SOL amount for each trade:
-```
-/settings 0.5
-```
-This sets the buy amount to 0.5 SOL per `/call` command.
+Settings -> Group Call/DCA Amount
 
-**Range**: 0.1 - 5.0 SOL  
-**Default**: 0.1 SOL
+## Step 8: Make Your First Trade
 
-### Set Minimum Balance
-
-Set how much SOL must remain in the wallet before profit distribution:
-```
-/setminbal 1.0
-```
-This ensures at least 1.0 SOL stays in the wallet.
-
-## Step 7: Make Your First Trade!
-
-Now you're ready to trade! Here's how:
-
-1. **Call a token** (buy):
-   ```
-   /call 55592jXxdwmCxERy2YmpJMi7MGcqJ6kwYJ2Ztrro7XfX
-   ```
-   Replace the address with any Solana token address.
-
-2. **Check your positions**:
-   ```
-   /positions
-   ```
-
-3. **Sell when ready**:
-   ```
-   /sell [token_address]
-   ```
-   Or reply to the original `/call` message with `/sell`
-
-## Next Steps
-
-Congratulations! Your group is now set up. Learn more about:
-
-- **[Trading Commands](../trading/overview.md)** - Master all trading features
-- **[Setting Up Traders](../group-setup/traders.md)** - Manage trader permissions
-- **[Profit Distribution](../profit-distribution/overview.md)** - Understand how profits are shared
-- **[Token Deployment](../deployment/overview.md)** - Launch your own tokens
+1. Call -> send the token address
+2. Positions -> check the position
+3. Sell or Take Profit when ready
 
 ## Common Issues
 
-### Bot doesn't respond to commands
-- ✅ Make sure the bot is an **admin**
-- ✅ Check that the group is **private** (not a public channel)
-- ✅ Verify you've run `/start` to initialize
+### Bot does not respond
+- Bot is admin
+- Group is private
+- The owner has completed initialization
 
-### "Bot not initialized" error
-- ✅ Run `/start` command (group owner only)
-- ✅ Make sure you're the group owner/creator
+### "Bot not initialized"
+- Ask the owner to complete initialization
 
-### "You must be a trader" error
-- ✅ Ask the group owner to add you: `/addtrader @yourusername`
-- ✅ Or set a payout wallet: `/payout [your_wallet_address]`
+### "You must be a trader"
+- Ask owner to add you in Settings -> Traders
+- Set a payout wallet in Settings -> Payouts
 
 ---
 
-*Need help? Use `/info` to see all available commands, or `/howto` for a quick reference guide.*
+Need help? Open the Sentry Menu and follow the prompts. Every flow includes guidance and back buttons.

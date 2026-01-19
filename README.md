@@ -1,74 +1,52 @@
-# Sentry Bot User Guide
+# Sentry Bot User Guide (Menu Edition)
 
-Welcome to the **Sentry Bot User Guide**! This comprehensive documentation will help you master every feature of Sentry Bot, the ultimate community trading tool for Solana.
+Welcome to the Sentry Bot User Guide. This documentation is updated for the button-driven Sentry Menu experience. Instead of typing commands, users navigate through menus and tap buttons to trade, manage settings, and view performance.
 
-## 🤖 What is Sentry Bot?
+## What is Sentry Bot?
 
-Sentry Bot transforms your Telegram group into a **decentralized hedge fund** on the Solana blockchain. Pool liquidity with your community, execute coordinated token trades, and automatically share profits based on trading performance.
+Sentry Bot turns your Telegram group into a decentralized hedge fund on Solana. Pool capital, trade together, and automatically distribute profits based on performance.
 
 ### Key Features
 
-- 🚀 **Instant Token Trading**: Buy and sell any Solana token with a single command
-- 💰 **Shared Profit Distribution**: Automatically split trading profits among group members
-- 📊 **Performance Analytics**: Track trades, PnL, and leaderboards
-- 🎯 **Token Deployment**: Launch your own tokens with zero capital required
-- 🌾 **LP Fee Harvesting**: Collect fees from liquidity pools you create
-- 📈 **Smart Routing**: Best prices via Jupiter and Orca DEX aggregators
+- Button-driven trading: Call, DCA, sell, and take profit from the menu
+- Shared profit distribution: Automatic profit splits to payout wallets
+- Performance analytics: Stats, PnL, and leaderboards on demand
+- Token deployment: Deploy tokens and manage bundle wallets
+- Yield harvesting: Harvest LP fees from deployments
+- Smart routing: Best prices via Jupiter and Orca
 
-## 📚 Documentation Structure
+## The Sentry Menu (New Interface)
 
-This guide is organized into the following sections:
+Open the menu from Telegram's chat menu. The main buttons are:
 
-### 🚀 [Getting Started](./getting-started/introduction.md)
-Learn the basics and get your group set up for trading.
+**Call  DCA  Sell  Take Profit  Balance  Positions  Settings  Stats  Leaderboard  PnL  Deployer**
 
-### 🏁 [Group Setup](./group-setup/overview.md)
-Configure traders, wallets, and group settings.
+Each button guides you with prompts and follow-up buttons, so you never need to remember command syntax.
 
-### 💸 [Trading Guide](./trading/overview.md)
-Master all trading commands: calls, DCAs, sells, and take profits.
+## Documentation Structure
 
-### 📊 [Analytics & Performance](./analytics/overview.md)
-Understand leaderboards, stats, and performance metrics.
+- [Getting Started](./getting-started/introduction.md)
+- [Group Setup](./group-setup/overview.md)
+- [Trading Guide](./trading/overview.md)
+- [Analytics and Performance](./analytics/overview.md)
+- [Token Deployment](./deployment/overview.md)
 
-### 🚀 [Token Deployment](./deployment/overview.md)
-Deploy tokens, set up bundle wallets, and manage launches.
+## Quick Start
 
-### 💰 [Profit Distribution](./profit-distribution/overview.md)
-Learn how profits are calculated and distributed.
+1. Add the bot to your Telegram group
+2. Promote the bot to Admin (required)
+3. The owner initializes the bot and wallets
+4. Fund the Group Wallet with SOL
+5. Open the Sentry Menu and tap Call to buy a token
 
-### 🌾 [Harvesting LP Fees](./harvesting/overview.md)
-Collect trading fees from liquidity pools.
+For full setup steps, see [Getting Started](./getting-started/introduction.md).
 
-### 📋 [Command Reference](./commands/overview.md)
-Complete reference for all bot commands.
+## Official Resources
 
-### ❓ [FAQs](./faq/general.md)
-Common questions and troubleshooting.
-
-## 🎯 Quick Start
-
-1. **Add the bot** to your Telegram group
-2. **Promote the bot** to Admin (required for message reading)
-3. Run `/start` to initialize your group wallet
-4. **Fund the wallet** with SOL
-5. Start trading with `/call <token_address>`
-
-For detailed instructions, see the [Getting Started Guide](./getting-started/introduction.md).
-
-## 🔗 Official Resources
-
-- **Official Token**: $SENTRY (`55592jXxdwmCxERy2YmpJMi7MGcqJ6kwYJ2Ztrro7XfX`)
-- **Support**: Contact through your Telegram group
-- **Updates**: Check `/info` command for latest features
-
-## 📖 How to Use This Guide
-
-- **New users**: Start with [Getting Started](./getting-started/introduction.md)
-- **Group owners**: See [Group Setup](./group-setup/overview.md) first
-- **Traders**: Jump to [Trading Guide](./trading/overview.md)
-- **Quick reference**: Check [Command Reference](./commands/overview.md)
+- Official Token: $SENTRY (`55592jXxdwmCxERy2YmpJMi7MGcqJ6kwYJ2Ztrro7XfX`)
+- Support: Contact through your Telegram group
+- Updates: Ask your group owner or check pinned announcements
 
 ---
 
-*Last Updated: January 2026*
+Last Updated: January 2026

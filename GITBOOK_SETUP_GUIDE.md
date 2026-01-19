@@ -1,4 +1,4 @@
-# GitBook Setup Guide for Sentry Bot Documentation
+﻿# GitBook Setup Guide for Sentry Bot Documentation
 
 ## What is GitBook?
 
@@ -70,20 +70,20 @@ GitBook is a modern documentation platform that allows you to create beautiful, 
 GitBook **CAN sync with private repositories**. Here are your options:
 
 ### Option 1: Private Repo + Public GitBook Docs (Recommended)
-- ✅ Keep your GitHub repository **private** (code stays secure)
-- ✅ Make your GitBook documentation **public** (users can access docs)
-- ✅ Works with GitBook's free tier
-- ✅ Best of both worlds: secure code, accessible documentation
+-  Keep your GitHub repository **private** (code stays secure)
+-  Make your GitBook documentation **public** (users can access docs)
+-  Works with GitBook's free tier
+-  Best of both worlds: secure code, accessible documentation
 
 ### Option 2: Public Repo + Public GitBook Docs
-- ✅ Simpler setup (no permission issues)
-- ✅ Everything is publicly accessible
-- ✅ Works with free tier
-- ⚠️ Your code repository will be visible to everyone
+-  Simpler setup (no permission issues)
+-  Everything is publicly accessible
+-  Works with free tier
+-   Your code repository will be visible to everyone
 
 ### Option 3: Private Repo + Private GitBook Docs
-- ✅ Maximum privacy
-- ⚠️ Usually requires a paid GitBook plan
+-  Maximum privacy
+-   Usually requires a paid GitBook plan
 - Users would need access to view documentation
 
 **Recommendation**: Option 1 is ideal - keep your code private, make the user documentation public so anyone can access it.
@@ -100,11 +100,11 @@ GitBook **CAN sync with private repositories**. Here are your options:
 
 ## Next Steps
 
-1. ✅ Set up GitBook account
-2. ✅ Create a space
-3. ✅ Enable GitHub sync
-4. ✅ Create documentation structure (see `GITBOOK_DOCUMENTATION_STRUCTURE.md`)
-5. ✅ Start writing content
+1.  Set up GitBook account
+2.  Create a space
+3.  Enable GitHub sync
+4.  Create documentation structure (see `GITBOOK_DOCUMENTATION_STRUCTURE.md`)
+5.  Start writing content
 
 ---
 
